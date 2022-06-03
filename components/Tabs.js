@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
 import NavLink from './NavLink';
-{
-  /* <ThemeContext.Provider value={this.state.theme}>
-            <Toolbar changeTheme={this.toggleTheme} />
-          </ThemeContext.Provider> */
-}
 
 const Tabs = ({ children, navItems, contentClassName }) => {
   const [active, setActive] = useState(0);
@@ -13,11 +8,7 @@ const Tabs = ({ children, navItems, contentClassName }) => {
     <>
       <nav className="flex mb-2">
         {navItems.map((item, index) => (
-          <NavLink
-            key={item}
-            selected={active === index}
-            onClick={() => setActive(index)}
-          >
+          <NavLink key={item} selected={active === index} onClick={() => setActive(index)}>
             {item}
           </NavLink>
         ))}

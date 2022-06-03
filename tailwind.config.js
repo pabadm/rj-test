@@ -1,23 +1,16 @@
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-  ],
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",  ],
   theme: {
-    borderRadius: {
-      none: 0,
-      sm: '6px',
-      md: '12px',
-      lg: '16px',
-      full: '9999px',
-    },
+    borderRadius: { none: 0, sm: '6px', md: '12px', lg: '16px', full: '9999px' },
     extend: {
       colors: {
-        primary: { bluelight2: '#E7F2FE', blue: '#00519E', yellow: 'FABB00' },
+        primary: {bluelight2: '#E7F2FE', blue: "#00519E"},
         secondary: {
-          bluedark2: '#004180',
-        },
-        neutral: { white: 'white', gray2: '#92A4AD' },
+          bluedark2: '#004180',        },
+          neutral: {white: "white",
+          gray2: '#92A4AD',}
       },
       spacing: {
         0.5: '4px',
@@ -34,4 +27,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}

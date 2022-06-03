@@ -1,7 +1,11 @@
 import React from 'react';
 import classNames from 'classnames';
 
-const Alert = ({ children, headline, ...props }) => {
+const Alert = ({
+  children,
+  headline,
+  ...props
+}) => {
   const textClasses = 'text-secondary-bluedark2';
 
   return (
@@ -10,23 +14,17 @@ const Alert = ({ children, headline, ...props }) => {
       {...props}
     >
       <img
-        src="info.svg"
+      src="info.svg"
         className={classNames(
           'w-3 sm:w-2.5 h-3 sm:h-2.5 mr-1.5 sm:mr-1 flex-shrink-0 fill-current',
-          textClasses
+          textClasses,
         )}
       />
       <div
-        className={classNames(
-          textClasses,
-          'flex flex-col justify-center w-full'
-        )}
+        className={classNames(textClasses, 'flex flex-col justify-center w-full')}
       >
         {headline && (
-          <div
-            className="text-base font-bold"
-            dangerouslySetInnerHTML={{ __html: headline }}
-          />
+          <div className="text-base font-bold" dangerouslySetInnerHTML={{ __html: headline }} />
         )}
 
         {typeof children === 'string' ? (
