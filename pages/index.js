@@ -5,6 +5,7 @@ import Tabs from '../components/Tabs';
 import StateContext from '../components/StateContext';
 
 const Home = () => {
+  //for git section
   const tabData = () => [
     <QrBox userAccountCode={'8662794092'} key={8662794092} />,
     <QrBox userAccountCode={'1896194979'} key={1896194979} />,
