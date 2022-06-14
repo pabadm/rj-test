@@ -13,7 +13,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: { bluelight2: '#E7F2FE', blue: '#00519E', yellow: 'FABB00' },
+        primary: { bluelight2: '#E7F2FE', blue: '#00519E', yellow: '#FABB00' },
         secondary: {
           bluedark2: '#004180',
         },
